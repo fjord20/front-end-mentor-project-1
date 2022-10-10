@@ -5,6 +5,8 @@ body {
 .flex-container {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    transform: translate(0, 25%);
     width: 1200px;
     height: 900px;
    }
@@ -24,7 +26,7 @@ body {
 }
 
 .parfume {
-    margin-left: 30px;
+    margin-left: 10%;
     margin-top: 30px;
       
 }
@@ -35,23 +37,27 @@ body {
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     font-weight: 700;
+    opacity: 0.5;
   
 }
 
 .title-parfume {
-    margin-left: 30px;
-    margin-right: 50px;   
+    margin-left: 10%;
+    margin-right: 83px;  
+    
 }
 
 .title-parfume h1 {
     font-family: 'Fraunces', serif;
     font-size: 68px;
     font-weight: 700;
+    line-height: 65px;
+    
 }
 
 .parfume-description {
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 115px;
 }
 
 .parfume-description p {
@@ -59,8 +65,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 40px;
     color: hsl(228, 12%, 48%);
+    opacity: 0.5;
 }
-
 
 .cart-bottom {
     display: block;
@@ -68,6 +74,7 @@ body {
     height: 80px;
     position: relative;
     left: 10%;
+    bottom: 7%;
     border-radius: 10px;
     background-color: hsl(158, 36%, 37%) ;
 }
@@ -97,8 +104,13 @@ body {
 .cost {
     display: flex;
     flex-direction: row;
+    position: relative;
+    bottom: 5%;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 10%;
+    
+    
+   
 }
 
 .cost-real p {
@@ -106,6 +118,7 @@ body {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-weight: 700;
+    margin-right: 70px;
 }
 
 .cost-del del {
@@ -113,5 +126,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-weight: 400;
+    opacity: 0.5;
     
 }
