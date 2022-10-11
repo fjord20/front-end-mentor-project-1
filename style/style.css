@@ -1,20 +1,23 @@
 body {
     background-color: hsl(30, 38%, 92%);
+    padding: 0px;
+    margin: 0px;
     }
 
 .flex-container {
     display: flex;
     flex-direction: row;
     margin: auto;
-    transform: translate(0, 25%);
+    transform: translate(0, 8%);
     width: 1200px;
     height: 900px;
    }
 
 
-.image-product img {
+.image-product picture img {
+    display: block;
     border: none;
-    border-radius: 30px 0px 0px 30px;  
+    border-radius: 30px 0px 0px 30px;
 }
 
 .product-info {
@@ -28,7 +31,6 @@ body {
 .parfume {
     margin-left: 10%;
     margin-top: 30px;
-      
 }
 
 .parfume p {
@@ -36,15 +38,12 @@ body {
     font-size: 30px;
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
-    font-weight: 700;
     opacity: 0.5;
-  
 }
 
 .title-parfume {
     margin-left: 10%;
-    margin-right: 83px;  
-    
+    margin-right: 83px;
 }
 
 .title-parfume h1 {
@@ -52,7 +51,6 @@ body {
     font-size: 68px;
     font-weight: 700;
     line-height: 65px;
-    
 }
 
 .parfume-description {
@@ -83,8 +81,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 25px;
-            
+    position: relative;
+    top: 35%;
 }
 
 .image-cart img {
@@ -108,9 +106,6 @@ body {
     bottom: 5%;
     align-items: center;
     margin-left: 10%;
-    
-    
-   
 }
 
 .cost-real p {
@@ -118,7 +113,7 @@ body {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-weight: 700;
-    margin-right: 70px;
+    margin-right: 35px;
 }
 
 .cost-del del {
@@ -127,5 +122,107 @@ body {
     color: hsl(228, 12%, 48%);
     font-weight: 400;
     opacity: 0.5;
-    
 }
+
+/* media query*/
+
+@media screen and (max-width: 375px) {
+    .flex-container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 374px;
+        height: 380px;
+        transform: translate(0, 0);
+    }
+    
+    .image-product picture img {
+        border: none;
+        border-radius: 30px 30px 0px 0px;
+        width: 374px;
+    }
+
+    body {
+        background-color: none;
+    }
+
+    .product-info {    
+        border-radius: 0px 0px 30px 30px;
+        width: 374px;
+        height: 380px;
+    }
+    
+    .parfume {
+        margin-top: 1%;
+    }
+    
+    .parfume p {
+        font-size: 18px;
+    }
+    
+    .title-parfume {
+        position: relative;
+        bottom: 5%;
+        margin-right: 10%;
+    }
+    
+    .title-parfume h1 {
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+    
+    .parfume-description {
+        position: relative;
+        bottom: 10%;
+        margin-right: 10%;
+    }
+    
+    .parfume-description p {
+        font-size: 18px;
+        line-height: 25px;          
+    }
+    
+    .cart-bottom {
+        height: 60px;
+        margin-top: -83px;
+        position: relative;
+        bottom: 5%;
+    }
+    
+    .add-to-cart {
+        top: 25%;
+    }
+    
+    .image-cart img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .add-to-cart-link a {
+        font-size: 18px;
+    }
+    
+    .cost {
+        position: relative;
+        bottom: 21%;       
+    }
+    
+    .cost-real p {
+        font-size: 34px;
+        margin-right: 20px;
+    }
+    
+    .cost-del del {
+        font-size: 20px;    
+    }
+}
+
+
+
+
+
+
+
+
+
